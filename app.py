@@ -12,7 +12,7 @@
 import streamlit as st
 
 def main():
-    st.title('내 앱 대시보드') # st는 화면 관련해서 처리
+    st.title('앱 대시보드') # st는 화면 관련해서 처리
     st.text('데이터 분석 앱입니다.')
     st.text('텍스트 앱입니다.')
 
