@@ -1,5 +1,15 @@
 # streamlit
 
+## 자주 쓸 것 같은 코드
+- 1. 멀티셀렉트로 받은 컬럼명(user_choise)을 이용해 df[user_choise]의 값의 종류를 셀렉트박스로 받은 뒤, 변경 후 df의 같은 인덱스 값으로 반환하기.
+```python
+label_df['컬럼'].values[df[df['컬럼'] == st.selectbox('값을 선택해주세요.', df[user_choise].unique())]['자산상황'].index[0]]
+```
+라벨인코딩 전 df를 통해 라벨인코딩 후의 label_df값으로 받기.
+활용하면 원핫인코딩도 가능.
+
+
+
 ## 터미널 명렁어
 - streamlit run 파일이름: 파일 실행.
 
@@ -99,4 +109,3 @@ df = df.sort_values('Sum', ascending=False) # 'Sum' 기준 내림차순
     fig = px.bar(df, x='lang', y='Sum') # x, y 설정
     st.plotly_chart(fig) # 차트 출력
 ```
-test
