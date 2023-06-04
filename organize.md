@@ -109,3 +109,4 @@ df = df.sort_values('Sum', ascending=False) # 'Sum' 기준 내림차순
     fig = px.bar(df, x='lang', y='Sum') # x, y 설정
     st.plotly_chart(fig) # 차트 출력
 ```
+test
