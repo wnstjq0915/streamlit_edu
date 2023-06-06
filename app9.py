@@ -6,7 +6,7 @@ import seaborn as sns
 def main():
     st.title('앱 대시보드')
 
-    df = pd.read_csv('data/iris.csv')
+    df = pd.read_csv('streamlit_edu/data/iris.csv')
     st.dataframe(df)
 
     # sepal_length, sepal_width의 관계를 차트로
